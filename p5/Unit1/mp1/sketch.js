@@ -7,7 +7,7 @@ function draw() {
 
 
 if (mouseIsPressed) {
-  background(255, 253, 135) ;
+  background('blue') ;
 
 } else {
   background('pink');
