@@ -22,6 +22,6 @@ text("If I'm not behind my camera", width / 2, height / 2 + 90) ;
 
 textFont(f1);
 textSize(30);
-text("I'm probably messing with charcoal or paint.", width / 2, height / 2 + 135) ;
+text("I'm probably messing with charcoal or paint", width / 2, height / 2 + 135) ;
 
 }
