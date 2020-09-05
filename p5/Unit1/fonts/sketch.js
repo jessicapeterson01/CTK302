@@ -1,13 +1,24 @@
 var f;
+var f1;
+
 function setup() {
 createCanvas(800, 800);
-f = loadFont("assets/whoaskssatan.ttf");
+
+f = loadFont("assets/drybrush.ttf");
+f1 = loadFont("assets/KGDropsofJupiter.ttf");
+
 textAlign(CENTER);
 }
 
 function draw() {
-background(100);
+background(150);
 textFont(f);
-textSize(200);
-text("Jessica", width/2, height/2);
+textSize(100);
+text("Jessica Peterson, Artist", width / 2, height / 2);
+
+textFont(f1);
+textSize(50);
+text("If I'm not behind my camera, I'm probably messing with charcoal or paint."
+width / 2, height / 2 + 70) ;
+
 }
