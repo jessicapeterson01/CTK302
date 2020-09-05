@@ -2,7 +2,7 @@ var img1, img2, img3 ;
 
 
 function setup() {
-createCanvas(800, 800) ;
+createCanvas(800, 1000) ;
 
 img1 = loadImage("photos/puddie.jpg") ;
 img2 = loadImage("photos/charcoal.jpg") ;
@@ -13,10 +13,10 @@ imageMode(CENTER) ;
 }
 
 function draw() {
-background(100) ;
+background(0) ;
 
 image(img3, width/2, height/2, 200, 300) ;
-image(img1, width/2, height/2 - 275, 300, 200) ;
-image(img2, width/2, height/2 + 275, 300, 200) ;
+image(img1, width/2, height/2 - 290, 300, 200) ;
+image(img2, width/2, height/2 + 290, 300, 200) ;
 
 }
