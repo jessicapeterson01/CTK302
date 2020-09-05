@@ -4,9 +4,10 @@ var img1, img2, img3 ;
 function setup() {
 createCanvas(800, 800) ;
 
-img1 = loadImage("assets/puddie.jpg") ;
-img2 = loadImage("assets/charcoal.jpg") ;
-img3 = loadImage("assets/scarystories.jpg") ;
+img1 = loadImage("photos/puddie.jpg") ;
+img2 = loadImage("photos/charcoal.jpg") ;
+img3 = loadImage("photos/scarystories.jpg") ;
+
 
 imageMode(CENTER) ;
 }
@@ -14,7 +15,8 @@ imageMode(CENTER) ;
 function draw() {
 background(100) ;
 
-image(img1, width/2, height/2, 200, 200) ;
-image(img2, width/2, height/2 - 220, 200, 200) ;
+image(img1, width/2, height/2, 300, 200) ;
+image(img2, width/2, height/2 - 220, 300, 200) ;
 image(img3, width/2, height/2 + 220, 200, 200) ;
+
 }
