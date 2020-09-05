@@ -15,8 +15,8 @@ imageMode(CENTER) ;
 function draw() {
 background(100) ;
 
-image(img1, width/2, height/2, 300, 200) ;
-image(img2, width/2, height/2 - 220, 300, 200) ;
-image(img3, width/2, height/2 + 220, 200, 200) ;
+image(img3, width/2, height/2, 200, 300) ;
+image(img1, width/2, height/2 - 275, 300, 200) ;
+image(img2, width/2, height/2 + 275, 300, 200) ;
 
 }
