@@ -6,7 +6,7 @@ function preload() {
 }
 
 function setup() {
- createCanvas(500, 500) ;
+ // createCanvas(500, 500) ;
  song1.loop() ;
 
 }
