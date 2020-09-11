@@ -534,8 +534,8 @@ function draw() {
 
 
 
-  fill('white');
-  text(mouseX + " , " + mouseY, 10, 20); //this helps know where the mouse is
+  // fill('white') ;
+  // text(mouseX + " , " + mouseY, 10, 20); //this helps know where the mouse is
 
 
   if (mouseIsPressed) {
