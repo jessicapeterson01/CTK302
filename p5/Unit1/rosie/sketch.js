@@ -1,17 +1,18 @@
+var f;
 var song1;
 
 function preload() {
-  song1 = loadSound("sound/magicwand.mp3");
+  song1 = loadSound("assets/chimes1.mp3");
 
 }
+
 
 
 function setup() {
   createCanvas(700, 500);
+  f = loadFont("assets/hazelgrace.ttf");
   song1.pause();
 }
-
-
 
 function mousePressed() {
   song1.play();
@@ -19,6 +20,7 @@ function mousePressed() {
 function mouseReleased(){
   song1.pause();
 }
+
 
 
 
@@ -240,7 +242,11 @@ function draw() {
 
 
 
+// text for grass "Rain, rain, go away"
+
   fill('white')
+  textFont(f);
+  textSize(15);
   text("Rain, rain, go away.", 300, 475, 600, 400)
 
   stroke(0)
@@ -565,11 +571,10 @@ function draw() {
 
   // }
 
-}
+  }
 
   function touchStarted() {
     getAudioContext().resume();
-
   }
 
 }
