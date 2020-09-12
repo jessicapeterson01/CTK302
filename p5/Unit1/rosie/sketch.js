@@ -242,12 +242,18 @@ function draw() {
 
 
 
-// text for grass "Rain, rain, go away"
 
-  fill('white')
-  textFont(f);
-  textSize(15);
-  text("Rain, rain, go away.", 300, 475, 600, 400)
+
+  // text for grass "Rain, rain, go away"
+
+  fill('white') ;
+  textFont(f) ;
+  textSize(50) ;
+  text("Rain, rain, go away.", 250, 447, 600, 400) ;
+
+
+
+
 
   stroke(0)
 
@@ -560,8 +566,8 @@ function draw() {
 
 
 
-  // fill('white') ;
-  // text(mouseX + " , " + mouseY, 10, 20); //this helps know where the mouse is
+  fill('white') ;
+  text(mouseX + " , " + mouseY, 10, 20); //this helps know where the mouse is
 
 
   if (mouseIsPressed) {

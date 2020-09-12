@@ -1,13 +1,15 @@
+var f;
 var song1;
 
 function preload() {
-  song1 = loadSound("sound/magicwand.mp3");
+  song1 = loadSound("assets/magicwand.mp3");
 
 }
 
 
 function setup() {
   createCanvas(700, 500);
+  f = loadFont("assets/Betty.ttf");
   song1.pause();
 }
 
@@ -240,8 +242,17 @@ function draw() {
 
 
 
-  fill('white')
-  text("Rain, rain, go away.", 300, 475, 600, 400)
+
+
+  // text for grass "Rain, rain, go away"
+
+  fill('white') ;
+  textFont(f) ;
+  textSize(25) ;
+  text("Rain, rain, go away.", 260, 465, 600, 400) ;
+
+
+
 
   stroke(0)
 
