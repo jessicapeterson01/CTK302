@@ -13,7 +13,10 @@ function setup() {
 
 function draw() {
 
+}
+
   function mouseReleased() {
+
     if (song1.isPlaying()) {
       song1.pause();
     } else {
