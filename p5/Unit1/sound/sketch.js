@@ -12,21 +12,19 @@ function setup() {
 }
 
 function draw() {
-  background(100);
-}
 
-function mouseReleased() {
-  if (song1.isPlaying()) {
-    song1.pause();
-  } else {
-    song1.loop();
+  function mouseReleased() {
+    if (song1.isPlaying()) {
+      song1.pause();
+    } else {
+      song1.loop();
+    }
+
+
+    // added code for sound --keep at bottom
+    function touchStarted() {
+      getAudioContext().resume();
+    }
+
+
   }
-
-
-  // added code for sound --keep at bottom
-  function touchStarted() {
-    getAudioContext().resume();
-  }
-
-
-}
