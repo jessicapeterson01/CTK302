@@ -245,7 +245,7 @@ function draw() {
 
 
 
-  // text for grass "Rain, rain, go away"
+  // text "Rain, rain, go away"
 
   fill('white') ;
   textFont(f) ;
