@@ -11,7 +11,7 @@
    // rect(x, 250, 10, 10) ;
 
    fill(random(255), random(255), random(255)) ;
-   textSize(30) ;
+   textSize(32) ;
    text("Sometimes you need\na little splash of color", x, 250) ;
 
    x += 2 ;
