@@ -15,6 +15,7 @@ function draw() {
     case 1:
       background('pink');
       text("case 1", 250, 250);
+      textSize(35) ;
       break;
   }
 
