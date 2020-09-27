@@ -17,7 +17,7 @@ break ;
 
 case 1:
 background('red');
-text("because he wanted to learn how to draw blood", 250, 250);
+text("because he wanted to learn\nhow to draw blood", 250, 250);
 break ;
 
   }
