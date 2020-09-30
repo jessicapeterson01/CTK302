@@ -1,7 +1,7 @@
 let state = 0 ;
 let timer = 0 ;
 let x = 0 ;
-let velocity = 10 ;
+let velocity = 10 ; 
 
 
 function setup() {
@@ -54,7 +54,7 @@ if (x > width) {
     ellipse(width/2, height/2, 150, 150) ;
     fill('grey') ;
     ellipse(width/2, height/2 + 170, 150, 150) ;
-    velocity = 5 ; 
+    velocity = 5 ;
     break ;
 
   }
