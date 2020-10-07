@@ -105,7 +105,7 @@ text('Yell BOO!', 600, 100) ;
   if (vol > .010) { // if the volume is LOUD?
     // do something
   state = 3 ;
-  song1.play() ;
+
   }
 break ;
 
@@ -116,7 +116,7 @@ case 3:
 // pumpkin lights up
 image(glow800, 0, 0) ;
 image(blackcats, 0, 0) ;
-
+song1.play() ;
 
 
 // fill('yellow') ;
@@ -139,7 +139,6 @@ function mouseReleased() {
   state++ ;
   if (state > 3) {
   state = 0;
-  song1.pause();
  }
 }
 
