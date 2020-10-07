@@ -1,5 +1,6 @@
 let state = 0 ;
 let timer = 0 ;
+let song1 ;
 var x = 0 ;
 var f ;
 var hauntedhouse ;
@@ -9,7 +10,6 @@ var rightghost2 ;
 var blackcats ;
 var thunder2 ;
 var howl ;
-var evillaugh ;
 var mic ;
 var vol ;
 
@@ -23,7 +23,7 @@ glow800 = loadImage("assets/glow800.png") ;
 blackcats = loadImage("assets/blackcats.png") ;
 thunder2 = loadSound("assets/thunder2.mp3") ;
 howl = loadSound("assets/howl.mp3") ;
-evillaugh = loadSound("assets/evillaugh.mp3") ;
+song1 = loadSound("assets/evillaugh.mp3") ;
 }
 
 
@@ -31,7 +31,7 @@ function setup() {
   createCanvas(800, 600) ;
   thunder2.loop() ;
   howl.play() ;
-  evillaugh.play() ;
+
 
 
   textSize(24) ;
@@ -73,7 +73,7 @@ break ;
 
 case 1:
 fill('white') ;
-text('watch out for ghosts!', 600, 100) ;
+text('It was a dark and stormy night', 600, 100) ;
 // increment the timer variable
 timer++
 // if the timer var is greater than 200x200
@@ -105,6 +105,7 @@ text('Yell BOO!', 600, 100) ;
   if (vol > .010) { // if the volume is LOUD?
     // do something
   state = 3 ;
+  song1.play() ;
   }
 break ;
 
@@ -115,6 +116,7 @@ case 3:
 // pumpkin lights up
 image(glow800, 0, 0) ;
 image(blackcats, 0, 0) ;
+
 
 
 // fill('yellow') ;
@@ -137,6 +139,7 @@ function mouseReleased() {
   state++ ;
   if (state > 3) {
   state = 0;
+  song1.pause();
  }
 }
 
