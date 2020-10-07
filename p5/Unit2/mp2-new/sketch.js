@@ -24,7 +24,7 @@ blackcats = loadImage("assets/blackcats.png") ;
 thunder2 = loadSound("assets/thunder2.mp3") ;
 howl = loadSound("assets/howl.mp3") ;
 song1 = loadSound("assets/evillaugh.mp3") ;
-f = loadFont("assets/octobercrow.ttf") ;
+
 }
 
 
@@ -32,6 +32,7 @@ function setup() {
   createCanvas(800, 600) ;
   thunder2.loop() ;
   howl.play() ;
+  f = loadFont("assets/octobercrow.ttf") ;
 
 
 
@@ -119,6 +120,9 @@ image(glow800, 0, 0) ;
 image(blackcats, 0, 0) ;
 song1.play() ;
 
+case 4:
+song1.pause() ;
+
 
 // fill('yellow') ;
 // text('Happy Halloween!', 600, 100) ;
@@ -138,7 +142,7 @@ break ;
 
 function mouseReleased() {
   state++ ;
-  if (state > 3) {
+  if (state > 4) {
   state = 0;
  }
 }
