@@ -1,13 +1,13 @@
 let numberOfTouches = 0 ;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight) ;
 }
 
 function draw() {
   clear();
   numberOfTouches = touches.length;
-  text(numberOfTouches + ' touches', 5, 10);
+  text(numberOfTouches + ' touches', 5, 10) ;
 
   switch(numberOfTouches) {
     case 0:
