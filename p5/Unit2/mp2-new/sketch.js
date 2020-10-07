@@ -52,7 +52,7 @@ image(hauntedhouse, 0, 0) ;
 
 
 // get the sound input
-vol = (mic.getLevel()).toFixed(2);
+// vol = (mic.getLevel()).toFixed(2);
 
 
 
@@ -64,6 +64,9 @@ image(hauntedhouse, 0, 0) ;
 
 fill('white') ;
 text('Click to begin', x, 200) ;
+textFont(f) ;
+textSize(50) ;
+
 x += 3 ;
 if (x > 800) {
   x = 0 ;
@@ -75,22 +78,26 @@ break ;
 
 case 1:
 fill('white') ;
-text("It was a dark and stormy night", 600, 100) ;
+textFont(f) ;
+textSize(40) ;
+text("It was a dark\nand stormy night", 600, 100) ;
+
 // increment the timer variable
 timer++
 // if the timer var is greater than 200x200
-if (timer > 400) {
-// make it do something
+if (timer > 200) {
 state = 2 ;
 timer = 0 ;
+}
 
+// not using this code
  // if (vol > .010) { // if the volume is LOUD?
   // make ghosts move
- x = x + 1 ;
- if (x > 800) {
-  x = 300 ;
-}
-}
+ // x = x + 1 ;
+  // if (x > 800) {
+  // x = 300 ;
+// }
+
 image(rightghost2, 0, 0, x) ;
 
 image(leftghost2, 0, 0) ;
@@ -102,9 +109,13 @@ break ;
 
 case 2:
 fill('white') ;
+textFont(f) ;
+textSize(50) ;
 text('Yell BOO!', 600, 100) ;
+// get the sound input
+vol = (mic.getLevel()).toFixed(2);
 // check how loud the input is
-  if (vol > .010) { // if the volume is LOUD?
+  if (vol > .030) { // if the volume is LOUD?
     // do something
   state = 3 ;
 
@@ -118,20 +129,16 @@ case 3:
 // pumpkin lights up
 image(glow800, 0, 0) ;
 image(blackcats, 0, 0) ;
-song1.play() ;
-
-case 4:
-song1.pause() ;
 
 
 // fill('yellow') ;
 // text('Happy Halloween!', 600, 100) ;
 
-// timer++
-// if the timer var is greater than 200x200
-// if (timer > 600) {
-// state = 0 ;
-// timer = 0 ;
+ // timer++
+ // if the timer var is greater than 200x200
+ // if (timer > 600) {
+ // state = 0 ;
+ // timer = 0 ;
 
 break ;
 
@@ -142,7 +149,7 @@ break ;
 
 function mouseReleased() {
   state++ ;
-  if (state > 4) {
+  if (state > 3) {
   state = 0;
  }
 }
