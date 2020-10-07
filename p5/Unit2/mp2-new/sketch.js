@@ -24,6 +24,7 @@ blackcats = loadImage("assets/blackcats.png") ;
 thunder2 = loadSound("assets/thunder2.mp3") ;
 howl = loadSound("assets/howl.mp3") ;
 song1 = loadSound("assets/evillaugh.mp3") ;
+f = loadFont("assets/octobercrow.ttf") ;
 }
 
 
@@ -73,7 +74,7 @@ break ;
 
 case 1:
 fill('white') ;
-text('It was a dark and stormy night', 600, 100) ;
+text("It was a dark and stormy night", 600, 100) ;
 // increment the timer variable
 timer++
 // if the timer var is greater than 200x200
