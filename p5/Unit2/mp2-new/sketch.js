@@ -31,6 +31,8 @@ function setup() {
   createCanvas(800, 600) ;
   thunder2.loop() ;
   howl.play() ;
+  evillaugh.play() ;
+
 
   textSize(24) ;
   textAlign(CENTER) ;
@@ -113,7 +115,7 @@ case 3:
 // pumpkin lights up
 image(glow800, 0, 0) ;
 image(blackcats, 0, 0) ;
-evillaugh.play() ;
+
 
 // fill('yellow') ;
 // text('Happy Halloween!', 600, 100) ;
