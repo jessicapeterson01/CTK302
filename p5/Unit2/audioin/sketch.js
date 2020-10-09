@@ -23,13 +23,17 @@ function draw() {
 // check how loud the input is
   if (vol > .010) { // if the volume is LOUD?
     // do something
-  c = color(random(255), random(255), random(255)) ; // here I'm setting the background to a random color
+  c = color(random(0), random(0), random(255)) ; // here I'm setting the background to a random color
   x = x + 1 ;
   }
-  fill(random(0), random(0), random(100)) ;
-  rect(200, 200, 30, x) ;
-  rect(100, 200, 30, x) ;
-  rect(50, 200, 30, x) ;
+  fill(random(0), random(255), random(100)) ;
+  ellipse(200, 200, x, x) ;
+  ellipse(100, 200, x, x) ;
+  ellipse(50, 200, x, x) ;
+  ellipse(500, 250, x, x) ;
+  ellipse(300, 300, x, x) ;
+  ellipse(450, 30, x, x) ;
+  ellipse(400, 75, x, x) ;
 
 
   // extra stuff for debugging
