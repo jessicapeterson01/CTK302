@@ -25,7 +25,11 @@ function draw() {
 
     case 0:
       background('yellow');
-      text("Shhh!!!", 250, 250);
+      textSize(20) ;
+      text('(click screen to activate sound)', 250, 30) ;
+
+      textSize(50) ;
+      text("Shhh!!!", 225, 225);
       fill('black');
 
       // check how loud the input is
@@ -47,7 +51,7 @@ function draw() {
         state = 0;
       }
 
-      break;
+      break ;
   }
 }
 
