@@ -34,7 +34,7 @@ function draw() {
 
 
       case 2:
-      text("or going crazy with paint...", 5, 22) ; 
+      text("or going crazy with paint...", 5, 22) ;
       // put a picture here
       image(img3, width/2, height/2, 0, 0);
       break ;
@@ -52,6 +52,7 @@ function draw() {
       // put a picture here
       image(img5, width/2, height/2, 0, 0);
       break ;
+
 
 
   }
