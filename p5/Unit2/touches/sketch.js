@@ -3,7 +3,7 @@ var img1, img2, img3, img4, img5 ;
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight) ;
+  createCanvas(700, 700) ;
 
   img1 = loadImage("assets/photography.jpeg");
   img2 = loadImage("assets/charcoal.png");
@@ -21,35 +21,35 @@ function draw() {
     case 0:
       text("If I'm not behind my camera...", 5, 22) ;
       // put a picture here
-      image(img1, width/2, height/2);
+      image(img1, width/2, height/2, 0, 0);
       break ;
 
 
       case 1:
        text("You might find me messing with charcoal", 5, 22) ;
       // put a picture here
-      image(img2, width/2, height/2);
+      image(img2, width/2, height/2, 0, 0);
       break ;
 
 
       case 2:
       text("or paint...")
       // put a picture here
-      image(img3, width/2, height/2, 700, 700);
+      image(img3, width/2, height/2, 0, 0);
       break ;
 
 
       case 3:
       text("My name is Jessica Peterson", 5, 22) ;
             // put a picture here
-      image(img4, width/2, height/2, 700, 700);
+      image(img4, width/2, height/2, 0, 0);
       break ;
 
 
       case 4:
        text("and I am an artist.", 5, 22) ;
       // put a picture here
-      image(img5, width/2, height/2, 700, 700);
+      image(img5, width/2, height/2, 0, 0);
       break ;
 
 
