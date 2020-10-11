@@ -10,6 +10,7 @@ function setup() {
   img3 = loadImage("assets/Acrylic.jpeg");
   img4 = loadImage("assets/oil.jpeg");
   img5 = loadImage("assets/digital.jpg");
+  imageMode(CENTER);
 }
 
 function draw() {
