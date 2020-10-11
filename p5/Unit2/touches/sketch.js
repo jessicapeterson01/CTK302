@@ -1,7 +1,15 @@
 let numberOfTouches = 0 ;
+var img1, img2, img3, img4, img5 ;
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight) ;
+
+  img1 = loadImage("assets/photography.jpeg");
+  img2 = loadImage("assets/charcoal.png");
+  img3 = loadImage("assets/Acrylic.jpeg");
+  img4 = loadImage("assets/oil.jpeg");
+  img5 = loadImage("assets/digital.jpg");
 }
 
 function draw() {
@@ -11,22 +19,37 @@ function draw() {
 
   switch(numberOfTouches) {
     case 0:
-      text("no one is touching the screen", 5, 22) ;
+      text("If I'm not behind my camera...", 5, 22) ;
+      // put a picture here
+      image(img1, width/2, height/2, 700, 700);
       break ;
+
 
       case 1:
-       text("it's kind of lonely here", 5, 22) ;
+       text("You might find me messing with charcoal", 5, 22) ;
       // put a picture here
+      image(img2, width/2, height/2, 700, 700);
       break ;
+
 
       case 2:
-      text("two fingers are touching the screen", 5, 22) ;
-            // put a picture here
+      text("or paint...")
+      // put a picture here
+      image(img3, width/2, height/2, 700, 700);
       break ;
 
+
       case 3:
-     text("three are touching the screen", 5, 22) ;
+      text("My name is Jessica Peterson", 5, 22) ;
             // put a picture here
+      image(img4, width/2, height/2, 700, 700);
+      break ;
+
+
+      case 4:
+       text("and I am an artist.", 5, 22) ;
+      // put a picture here
+      image(img5, width/2, height/2, 700, 700);
       break ;
 
 
