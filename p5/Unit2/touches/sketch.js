@@ -5,8 +5,8 @@ var img1, img2, img3, img4, img5 ;
 function setup() {
   createCanvas(700, 700) ;
 
-  img1 = loadImage("assets/photography.jpeg");
-  img2 = loadImage("assets/charcoal.png");
+  img1 = loadImage("assets/photography.png");
+  img2 = loadImage("assets/charcoal.jpeg");
   img3 = loadImage("assets/Acrylic.jpeg");
   img4 = loadImage("assets/oil.jpeg");
   img5 = loadImage("assets/digital.jpg");
