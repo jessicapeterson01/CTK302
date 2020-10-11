@@ -10,7 +10,13 @@ function setup() {
   img3 = loadImage("assets/Acrylic.jpeg");
   img4 = loadImage("assets/oil.jpeg");
   img5 = loadImage("assets/digital.jpg");
+  img6 = loadImage("assets/clay.png");
+  img7 = loadImage("assets/Jessicapainting.jpeg");
+  img8 = loadImage("assets/up.png");
   imageMode(CENTER);
+
+  textSize(24) ;
+  textAlign(CENTER) ;
 }
 
 function draw() {
@@ -34,26 +40,36 @@ function draw() {
 
 
       case 2:
-      text("or going crazy with paint...", 5, 22) ;
+      text("or stroking a canvas with paint...", 5, 22) ;
       // put a picture here
       image(img3, width/2, height/2, 0, 0);
       break ;
 
 
       case 3:
-      text("My name is Jessica Peterson", 5, 22) ;
-            // put a picture here
-      image(img4, width/2, height/2, 0, 0);
+            // me painting Hope
+      image(img7, width/2, height/2, 0, 0);
       break ;
 
 
       case 4:
-       text("and I am an artist.", 5, 22) ;
-      // put a picture here
+      // digital painting
       image(img5, width/2, height/2, 0, 0);
       break ;
 
 
+      case 5:
+       text("My name is Jessica Peterson, 5, 22) ;
+      // clay sculpture
+      image(img6, width/2, height/2, 0, 0);
+      break ;
+
+
+      case 6:
+       text("And I am an Artist.", 5, 22) ;
+      // umbrella photo
+      image(img8, width/2, height/2, 0, 0);
+      break ;
 
   }
 
