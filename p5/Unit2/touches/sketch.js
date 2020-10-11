@@ -27,6 +27,7 @@ function draw() {
   switch(numberOfTouches) {
     case 0:
       text("If I'm not behind my camera...", 5, 22) ;
+      textSize(25); 
       // put a picture here
       image(img1, width/2, height/2, 0, 0);
       break ;
