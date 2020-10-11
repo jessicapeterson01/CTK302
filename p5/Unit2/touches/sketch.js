@@ -21,14 +21,14 @@ function draw() {
     case 0:
       text("If I'm not behind my camera...", 5, 22) ;
       // put a picture here
-      image(img1, width/2, height/2, 700, 700);
+      image(img1, width/2, height/2);
       break ;
 
 
       case 1:
        text("You might find me messing with charcoal", 5, 22) ;
       // put a picture here
-      image(img2, width/2, height/2, 700, 700);
+      image(img2, width/2, height/2);
       break ;
 
 
