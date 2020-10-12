@@ -1,9 +1,9 @@
-let numberOfTouches = 0 ;
-var img1, img2, img3, img4, img5 ;
+let numberOfTouches = 0;
+var img1, img2, img3, img4, img5;
 
 
 function setup() {
-  createCanvas(700, 700) ;
+  createCanvas(700, 700);
 
   img1 = loadImage("assets/photography.png");
   img2 = loadImage("assets/charcoal.jpeg");
@@ -13,51 +13,49 @@ function setup() {
   img6 = loadImage("assets/Jessicapainting.jpeg");
 
   imageMode(CENTER);
+  textSize(24);
 
-  textSize(24) ;
-  textAlign(CENTER) ;
 }
 
 function draw() {
   clear();
   numberOfTouches = touches.length;
-  text(numberOfTouches + ' touches', 5, 10) ;
+  text(numberOfTouches + ' touches', 5, 10);
 
-  switch(numberOfTouches) {
+  switch (numberOfTouches) {
     case 0:
-      text("If I'm not behind my camera...", 5, 22) ;
-      textSize(25);
+      text("If I'm not behind my camera...", 5, 22);
       // put a picture here
-      image(img1, width/2, height/2, 0, 0);
-      break ;
+      image(img1, width / 2, height / 2, 0, 0);
+      break;
 
 
-      case 1:
-       text("You might find me messing with charcoal", 5, 22) ;
+    case 1:
+      text("You might find me messing with charcoal", 5, 22);
       // put a picture here
-      image(img2, width/2, height/2, 0, 0);
-      break ;
+      image(img2, width / 2, height / 2, 0, 0);
+      break;
 
 
-      case 2:
-      text("or stroking a canvas with paint...", 5, 22) ;
+    case 2:
+      text("or stroking a canvas with paint...", 5, 22);
       // put a picture here
-      image(img3, width/2, height/2, 0, 0);
-      break ;
+      image(img3, width / 2, height / 2, 0, 0);
+      break;
 
 
-      case 3:
+    case 3:
       // digital painting
       text("My name is Jessica Peterson", 5, 22);
-      image(img5, width/2, height/2, 0, 0);
-      break ;
+      image(img5, width / 2, height / 2, 0, 0);
+      break;
 
 
-      case 4:
-       text("And I am an Artist.", 5, 22) ;
+    case 4:
+      text("And I am an Artist.", 5, 22);
       // umbrella photo
-      image(img6, width/2, height/2, 0, 0);
-      break ;
+      image(img6, width / 2, height / 2, 0, 0);
+      break;
 
   }
 
