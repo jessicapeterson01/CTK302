@@ -24,21 +24,21 @@ function draw() {
 
   switch (numberOfTouches) {
     case 0:
-      text("If I'm not behind my camera...", 30, 22);
+      text("If I'm not behind my camera...", 5, 30);
       // put a picture here
       image(img1, width / 2, height / 2, 0, 0);
       break;
 
 
     case 1:
-      text("You might find me messing with charcoal", 30, 22);
+      text("You might find me messing with charcoal", 5, 30);
       // put a picture here
       image(img2, width / 2, height / 2, 0, 0);
       break;
 
 
     case 2:
-      text("or stroking a canvas with paint...", 30, 22);
+      text("or stroking a canvas with paint...", 5, 30);
       // put a picture here
       image(img3, width / 2, height / 2, 0, 0);
       break ;
@@ -46,13 +46,13 @@ function draw() {
 
     case 3:
       // digital painting
-      text("My name is Jessica Peterson", 30, 22);
+      text("My name is Jessica Peterson", 5, 30);
       image(img5, width / 2, height / 2, 0, 0);
       break;
 
 
     case 4:
-      text("And I am an Artist.", 30, 22);
+      text("And I am an Artist.", 5, 30);
       // umbrella photo
       image(img6, width / 2, height / 2, 0, 0);
       break;
