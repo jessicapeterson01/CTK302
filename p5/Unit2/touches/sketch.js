@@ -1,5 +1,5 @@
 let numberOfTouches = 0 ;
-var img1, img2, img3, img4, img5, img6, img7, img8;
+var img1, img2, img3, img4, img5 ;
 
 
 function setup() {
@@ -10,9 +10,8 @@ function setup() {
   img3 = loadImage("assets/Acrylic.jpeg");
   img4 = loadImage("assets/oil.jpeg");
   img5 = loadImage("assets/digital.jpg");
-  img6 = loadImage("assets/clay.png");
-  img7 = loadImage("assets/Jessicapainting.jpeg");
-  img8 = loadImage("assets/up.png");
+  img6 = loadImage("assets/up.png");
+
   imageMode(CENTER);
 
   textSize(24) ;
@@ -27,7 +26,7 @@ function draw() {
   switch(numberOfTouches) {
     case 0:
       text("If I'm not behind my camera...", 5, 22) ;
-      textSize(25); 
+      textSize(25);
       // put a picture here
       image(img1, width/2, height/2, 0, 0);
       break ;
@@ -48,28 +47,16 @@ function draw() {
 
 
       case 3:
-            // me painting Hope
-      image(img7, width/2, height/2, 0, 0);
-      break ;
-
-
-      case 4:
       // digital painting
+      text("My name is Jessica Peterson", 5, 22);
       image(img5, width/2, height/2, 0, 0);
       break ;
 
 
-      case 5:
-       text("My name is Jessica Peterson, 5, 22) ;
-      // clay sculpture
-      image(img6, width/2, height/2, 0, 0);
-      break ;
-
-
-      case 6:
+      case 4:
        text("And I am an Artist.", 5, 22) ;
       // umbrella photo
-      image(img8, width/2, height/2, 0, 0);
+      image(img6, width/2, height/2, 0, 0);
       break ;
 
   }
