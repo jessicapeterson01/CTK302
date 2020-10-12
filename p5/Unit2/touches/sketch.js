@@ -41,7 +41,7 @@ function draw() {
       text("or stroking a canvas with paint...", 30, 22);
       // put a picture here
       image(img3, width / 2, height / 2, 0, 0);
-      break;
+      break ;
 
 
     case 3:
