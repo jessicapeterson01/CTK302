@@ -13,7 +13,7 @@ function setup() {
   img6 = loadImage("assets/Jessicapainting.jpeg");
 
   imageMode(CENTER);
-  textSize(24);
+  textSize(15);
 
 }
 
