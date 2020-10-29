@@ -7,7 +7,7 @@ function setup() {
   myCar1 = new Car();
   myCar2 = new Car();
   myCar3 = new Car();
-  rectMode(CENTER); 
+  rectMode(CENTER);
 }
 
 function draw() {
@@ -25,8 +25,12 @@ class Car {
 
   constructor() {
     // attributes
+    // to combine x and y together
     this.pos = createVector(random(width), random(height));
+
+    // code below makes cars go in diff. directions
     this.vel = createVector(random(-5, 5), random(-5, 5));
+
     this.r = random(255);
     this.g = random(255);
     this.b = random(255);
@@ -43,7 +47,9 @@ class Car {
   }
 
   move() {
+    // this line of code below makes cars go diff. directions
     this.pos.add(this.vel);
+
     if (this.pos.x > width) this.pos.x = 0;
     if (this.pos.x < 0) this.pos.x = width;
     if (this.pos.y > height) this.pos.y = 0;
