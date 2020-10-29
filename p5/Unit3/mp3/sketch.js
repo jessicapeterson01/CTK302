@@ -17,7 +17,15 @@ var orange ;
 var yellow ;
 var green ;
 var darkblue ; 
+let song1 ;
+let song2 ;
+let song3 ;
 
+function preload() {
+  song1 = loadSound("assets/applause.mp3") ;
+  song2 = loadSound("assets/lose.mp3") ;
+  song3 = loadSound("assets/fairytale.mp3") ;
+}
 
 function setup() {
   // createCanvas(windowWidth, windowHeight);
@@ -58,6 +66,8 @@ function draw() {
     case 0:
     // image for the welcome screen
     image(colormyworld, 0, 0, 800, 600) ;
+    song1.pause() ;
+    song2.pause() ;
     // background(100) ;
     // text("Welcome to my game", width/2, height/2) ;
 
@@ -65,6 +75,8 @@ function draw() {
 
     case 1:
       game();
+      song1.pause() ;
+      song2.pause() ;
       timer++ ;
       if (timer > 20*60) {
       state = 3 ;
@@ -76,7 +88,9 @@ function draw() {
     // textFont() ;
     // text("hooray you won!", width/2, height/2) ;
     image(winner, 0, 0, 800, 600) ;
-    // ^ make an image
+    if (!song1.isPlaying()) {
+        song1.play();
+      }
       break;
 
     case 3:
@@ -84,8 +98,10 @@ function draw() {
     // textFont() ;
     // text("boo you lost", width/2, height/2) ;
     image(lose, 0, 0, 800, 600) ;
-    //  ^ make an image
-      break;
+    if (!song2.isPlaying()) {
+          song2.play();
+        }
+    break;
 
   }
 
@@ -213,3 +229,7 @@ class Car {
   }
 
 }
+
+function touchStarted() {
+    getAudioContext().resume();
+  }
