@@ -5,14 +5,18 @@ let cars = [];
 let canvas ;
 let colormyworld ;
 let lose ;
+let winner ;
 let frogPos;
 let state = 0;
 let maxCars = 3 ;
 let timer = 0 ;
 var paintbrush ;
 var redpaint ;
-
-
+var red ;
+var orange ;
+var yellow ;
+var green ;
+var darkblue ; 
 
 
 function setup() {
@@ -22,8 +26,14 @@ function setup() {
   frogPos = createVector(width / 2, height - 80);
   // imageMode(CENTER) ;
   lose = loadImage("assets/lose.jpg") ;
+  winner = loadImage("assets/winner.jpg") ;
   paintbrush = loadImage("assets/paintbrush.png") ;
   redpaint = loadImage("assets/redpaint.png") ;
+  red = loadImage("assets/red.png") ;
+  orange = loadImage("assets/orange.png") ;
+  yellow = loadImage("assets/yellow.png") ;
+  green = loadImage("assets/green.png") ;
+  darkblue = loadImage("assets/darkblue.png") ;
   canvas = loadImage("assets/canvas.jpg") ;
   colormyworld = loadImage("assets/colormyworld.jpg") ;
   // f1 = loadFont("assets/drip.ttf");
@@ -62,9 +72,10 @@ function draw() {
       break;
 
     case 2:
-    background('red') ;
+    // background('red') ;
     // textFont() ;
-    text("hooray you won!", width/2, height/2) ;
+    // text("hooray you won!", width/2, height/2) ;
+    image(winner, 0, 0, 800, 600) ;
     // ^ make an image
       break;
 
@@ -176,6 +187,11 @@ class Car {
 
   display() {
     image(redpaint, this.pos.x, this.pos.y, 50, 25);
+    image(red, this.pos.x, this.pos.y, 50, 25) ;
+    image(orange, this.pos.x, this.pos.y, 50, 25) ;
+    image(yellow, this.pos.x, this.pos.y, 50, 25) ;
+    image(green, this.pos.x, this.pos.y, 50, 25) ;
+    image(darkblue, this.pos.x, this.pos.y, 50, 25) ;
 
     // rect(this.pos.x, this.pos.y, 50, 25);
     // textSize(this.size);
