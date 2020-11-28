@@ -16,7 +16,7 @@ var red ;
 var orange ;
 var yellow ;
 var green ;
-var darkblue ; 
+var darkblue ;
 let song1 ;
 let song2 ;
 let song3 ;
@@ -203,11 +203,11 @@ class Car {
 
   display() {
     image(redpaint, this.pos.x, this.pos.y, 50, 25);
-    image(red, this.pos.x, this.pos.y, 50, 25) ;
-    image(orange, this.pos.x, this.pos.y, 50, 25) ;
-    image(yellow, this.pos.x, this.pos.y, 50, 25) ;
-    image(green, this.pos.x, this.pos.y, 50, 25) ;
-    image(darkblue, this.pos.x, this.pos.y, 50, 25) ;
+    image(red, this.pos.x, this.pos.y, 75, 75) ;
+   image(orange, this.pos.x, this.pos.y, 75, 50) ;
+  image(yellow, this.pos.x, this.pos.y, 75, 50) ;
+   image(green, this.pos.x, this.pos.y, 75, 50) ;
+    image(darkblue, this.pos.x, this.pos.y, 75, 50) ;
 
     // rect(this.pos.x, this.pos.y, 50, 25);
     // textSize(this.size);
