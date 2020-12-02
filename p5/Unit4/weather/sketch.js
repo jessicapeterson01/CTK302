@@ -1,6 +1,6 @@
 // Note - you must change line 19 to your own APPID to get this to work!
 
-var weather;
+var weather ;
 var weatherID = 0; // returned in the JSON weather element
 var myState = 0;
 var x = 0;
@@ -8,8 +8,8 @@ var windspeed = 0;
 var temperature = 0;
 var humidity = 0;
 var name;
-var graycloud;
-var castle;
+var graycloud ;
+var castle ;
 var f;
 
 
@@ -68,7 +68,7 @@ function draw() {
       text("Humidity: " + humidity + '%', 30, 160);
       text("Hour: " + hour(), + 30, 190);
       text("City: Birkenfeld", 30, 220);
-      text("Country: Germany", 30, 250); 
+      text("Country: Germany", 30, 250);
 
 
 
