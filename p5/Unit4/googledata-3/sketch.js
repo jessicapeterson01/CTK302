@@ -103,11 +103,11 @@ class Bubble {
     // ellipse(this.pos.x, this.pos.y, 125, 125);
     image(img1, this.pos.x, this.pos.y, 185, 210);
     // text("I would watch:", this.pos.x+90, this.pos.y+165);
-    textSize(15);
-    text(this.movie, this.pos.x + 90, this.pos.y + 180);
     textSize(20);
+    text(this.movie, this.pos.x + 90, this.pos.y + 180);
+    textSize(25);
     text(this.name, this.pos.x + 90, this.pos.y + 100);
-    textSize(15);
+    textSize(20);
     text(this.fear, this.pos.x + 90, this.pos.y + 125);
     // text(this.snack, this.pos.x, this.pos.y+32);
   }
