@@ -11,10 +11,10 @@ var canvas ;
 var pink ;
 var cars = [];
 var frogPos;
-var song1 ; 
+var song1 ;
 var f;
-var fade;
-var fadeAmount = 1
+
+
 
 function preload() {
   song1 = loadSound("assets/colors.mp3") ;
@@ -25,7 +25,7 @@ function setup() {
   song1.play();
   createCanvas(windowWidth, windowHeight);
   f = loadFont("assets/fingerpaint.ttf");
-  fade = 0;
+
 
   // initialize accelerometer variables
   alpha = 0;
@@ -97,18 +97,12 @@ function draw() {
   }
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  // fill('white');
-  fill(255, fade)
+  fill('white');
   textFont(f);
-   textSize(40);
+   textSize(75);
    textAlign(CENTER);
    text("Color My World", width / 2, height / 2);
-  if (fade<0) fadeAmount=1;
 
-  if (fade>255) fadeAmount=-5;
-
-  fade += fadeAmount;
-  print(fade)
   // text("Color My World", width / 2, height / 2, windowWidth - 200, windowHeight - 200);
 
 
