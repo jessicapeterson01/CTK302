@@ -97,9 +97,9 @@ function draw() {
   }
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  fill('white');
+  fill('black');
   textFont(f);
-   textSize(75);
+   textSize(40);
    textAlign(CENTER);
    text("Color My World", width / 2, height / 2);
 
