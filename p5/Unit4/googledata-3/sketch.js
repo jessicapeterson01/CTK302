@@ -103,7 +103,7 @@ class Bubble {
     // ellipse(this.pos.x, this.pos.y, 125, 125);
     image(img1, this.pos.x, this.pos.y, 185, 210);
     // text("I would watch:", this.pos.x+90, this.pos.y+165);
-    textSize(20);
+    textSize(18);
     text(this.movie, this.pos.x + 90, this.pos.y + 180);
     textSize(25);
     text(this.name, this.pos.x + 90, this.pos.y + 100);
@@ -114,7 +114,7 @@ class Bubble {
 
   drive() {
     this.pos.y += this.vel;
-    if (this.pos.y > width) this.pos.y = 0;
+    if (this.pos.y > height) this.pos.y = random(-400, -200); 
   }
 }
 
