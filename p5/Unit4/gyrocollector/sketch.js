@@ -61,7 +61,7 @@ function setup() {
 
 function draw() {
 
-  image(canvas, 0, 0, 1000, 1000); // canvas
+  image(canvas, 0, 0, 2000, 2000); // canvas
 
 
   // the map command !!!!
