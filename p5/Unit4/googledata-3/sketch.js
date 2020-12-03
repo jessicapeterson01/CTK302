@@ -1,16 +1,17 @@
 var bubbles = [];
 var img1;
 var f;
-// var song1;
+var song1;
 
-// function preload() {
-  // song1 = loadSound("assets/horror.mp3");
-// }
+function preload() {
+song1 = loadSound("assets/horror.mp3");
+}
 
 function setup() {
   f = loadFont("assets/treasure.ttf");
   textAlign(CENTER);
   // song1.play();
+  song1.loop();
 
 
   // Tabletop stuff, for getting google spreadsheet data in.
@@ -54,10 +55,12 @@ function draw() {
   background(190, 0, 0);
   fill('black');
   textFont(f);
+  textSize(30);
+  text('* Click for sound *', 500, 25);
   textSize(75);
-  text('What Are You Afraid Of?', 500, 100);
+  text('* What Are You Afraid Of *', 500, 115);
   textSize(50);
-  text('Which Horror Movie Would You Watch', 500, 180);
+  text('Which Horror Movie Would You Watch', 500, 190);
 
   // // iterate through the bubbles and display the objects!
   for (let i = 0; i < bubbles.length; i++) {
@@ -66,6 +69,15 @@ function draw() {
   }
 
 }
+
+
+// function mouseReleased() {
+//
+//   if (song1.isPlaying()) {
+//     song1.pause();
+//   } else {
+//     song1.loop();
+//   }
 
 
 // my Bubble class
@@ -104,8 +116,8 @@ class Bubble {
     this.pos.y += this.vel;
     if (this.pos.y > width) this.pos.y = 0;
   }
+}
 
- // function touchStarted() {
-    // getAudioContext().resume();
-  // }
+function touchStarted() {
+getAudioContext().resume();
 }
